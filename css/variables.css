@@ -1,0 +1,179 @@
+:root {
+
+    /* =========================
+       COLORS
+    ========================== */
+
+    --color-primary: #1c211b;
+    --color-primary-hover: #30382e;
+
+    /*
+       Darker gold for text on light backgrounds.
+       Better accessibility contrast.
+    */
+    --color-secondary: #765b2f;
+
+    /*
+       Lighter accent specifically for dark backgrounds.
+    */
+    --color-secondary-light: #c7a968;
+
+    --color-background: #fffdf8;
+    --color-surface: #f7f3ea;
+
+    --color-text: #1c211b;
+    --color-text-light: #68685f;
+
+    --color-border: #ded8cc;
+
+    --color-white: #ffffff;
+
+
+    /* =========================
+       TYPOGRAPHY
+    ========================== */
+
+    --font-body:
+        "Inter",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    --font-heading:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+
+    /* =========================
+       FONT SIZE
+    ========================== */
+
+    --fs-small: 0.875rem;
+    --fs-base: 1rem;
+    --fs-medium: 1.25rem;
+
+
+    /* =========================
+       SPACING
+    ========================== */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 7rem;
+
+
+    /* =========================
+       LAYOUT
+    ========================== */
+
+    --container-width: 1200px;
+    --container-padding: 1.5rem;
+
+
+    /* =========================
+       BORDER
+    ========================== */
+
+    --radius-small: 6px;
+    --radius-medium: 14px;
+    --radius-large: 24px;
+
+
+    /* =========================
+       TRANSITIONS
+    ========================== */
+
+    --transition: 0.25s ease;
+}:root {
+
+    /* =========================
+       COLORS
+    ========================== */
+
+    --color-primary: #1c211b;
+    --color-primary-hover: #30382e;
+
+    /*
+       Darker gold for text on light backgrounds.
+       Better accessibility contrast.
+    */
+    --color-secondary: #8b6f3d;
+
+    /*
+       Lighter accent specifically for dark backgrounds.
+    */
+    --color-secondary-light: #c7a968;
+
+    --color-background: #fffdf8;
+    --color-surface: #f7f3ea;
+
+    --color-text: #1c211b;
+    --color-text-light: #68685f;
+
+    --color-border: #ded8cc;
+
+    --color-white: #ffffff;
+
+
+    /* =========================
+       TYPOGRAPHY
+    ========================== */
+
+    --font-body:
+        "Inter",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    --font-heading:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+
+    /* =========================
+       FONT SIZE
+    ========================== */
+
+    --fs-small: 0.875rem;
+    --fs-base: 1rem;
+    --fs-medium: 1.25rem;
+
+
+    /* =========================
+       SPACING
+    ========================== */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 7rem;
+
+
+    /* =========================
+       LAYOUT
+    ========================== */
+
+    --container-width: 1200px;
+    --container-padding: 1.5rem;
+
+
+    /* =========================
+       BORDER
+    ========================== */
+
+    --radius-small: 6px;
+    --radius-medium: 14px;
+    --radius-large: 24px;
+
+
+    /* =========================
+       TRANSITIONS
+    ========================== */
+
+    --transition: 0.25s ease;
+}
