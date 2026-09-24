@@ -6,6 +6,7 @@ body {
     color: var(--color-text);
 
     font-family: var(--font-body);
+
     font-size: var(--fs-base);
 
     line-height: 1.65;
@@ -54,9 +55,11 @@ p {
 
     z-index: 1000;
 
-    border-bottom: 1px solid var(--color-border);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.12);
 
-    background: rgba(255, 253, 248, 0.96);
+    background:
+        rgba(17, 17, 15, 0.96);
 
     backdrop-filter: blur(12px);
 }
@@ -76,9 +79,12 @@ p {
 .logo {
     margin-right: auto;
 
+    color: var(--color-white);
+
     font-family: var(--font-body);
 
     font-size: 1.3rem;
+
     font-weight: 900;
 
     letter-spacing: 0.14em;
@@ -95,9 +101,10 @@ p {
 
 
 .nav__list a {
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.76);
 
     font-size: 0.95rem;
+
     font-weight: 600;
 
     transition: color var(--transition);
@@ -105,7 +112,7 @@ p {
 
 
 .nav__list a:hover {
-    color: var(--color-text);
+    color: var(--color-gold);
 }
 
 
@@ -117,9 +124,9 @@ p {
 .menu-toggle {
     display: none;
 
-    font-size: 1.75rem;
+    color: var(--color-white);
 
-    color: var(--color-text);
+    font-size: 1.75rem;
 }
 
 
@@ -133,6 +140,10 @@ p {
     min-height: calc(100vh - 76px);
 
     padding-block: var(--space-lg);
+
+    background: var(--color-dark);
+
+    color: var(--color-white);
 }
 
 
@@ -153,20 +164,22 @@ p {
     max-width: 800px;
 
     margin-bottom: var(--space-md);
+
+    color: var(--color-white);
 }
 
 
 .hero__content h1 span {
     display: block;
 
-    color: var(--color-secondary);
+    color: var(--color-gold);
 }
 
 
 .hero__description {
     margin-bottom: var(--space-md);
 
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.76);
 
     font-size: 1.1rem;
 }
@@ -181,6 +194,22 @@ p {
 }
 
 
+.hero .btn--secondary {
+    border-color: rgba(255, 255, 255, 0.55);
+
+    color: var(--color-white);
+}
+
+
+.hero .btn--secondary:hover {
+    border-color: var(--color-mint);
+
+    background: var(--color-mint);
+
+    color: var(--color-dark);
+}
+
+
 .hero__image {
     overflow: hidden;
 
@@ -191,11 +220,14 @@ p {
     min-height: 520px;
 
     border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-medium);
 }
 
 
 .hero__image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -205,7 +237,14 @@ p {
 /* SERVICES */
 
 .services {
-    background: var(--color-surface);
+    background: var(--color-white);
+
+    color: var(--color-dark);
+}
+
+
+.services .eyebrow {
+    color: var(--color-red);
 }
 
 
@@ -225,9 +264,23 @@ p {
     min-width: 0;
 
     border: 1px solid var(--color-border);
+
     border-radius: var(--radius-medium);
 
-    background: var(--color-background);
+    background: var(--color-white);
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-medium);
 }
 
 
@@ -240,6 +293,7 @@ p {
 
 .service-card__image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -263,10 +317,11 @@ p {
 
     margin-bottom: var(--space-sm);
 
-    color: var(--color-secondary);
+    color: var(--color-gold-dark);
 
     font-size: var(--fs-small);
-    font-weight: 700;
+
+    font-weight: 800;
 }
 
 
@@ -281,6 +336,18 @@ p {
 
 
 /* ABOUT */
+
+.about {
+    background: var(--color-dark);
+
+    color: var(--color-white);
+}
+
+
+.about .eyebrow {
+    color: var(--color-gold);
+}
+
 
 .about__grid {
     display: grid;
@@ -303,11 +370,14 @@ p {
     aspect-ratio: 4 / 5;
 
     border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-medium);
 }
 
 
 .about__image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -318,27 +388,39 @@ p {
     max-width: 700px;
 
     margin-bottom: var(--space-md);
+
+    color: var(--color-white);
 }
 
 
 .about__content p:not(.eyebrow) {
     margin-bottom: var(--space-sm);
 
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.74);
+}
+
+
+.about .text-link {
+    color: var(--color-gold);
+}
+
+
+.about .text-link:hover {
+    color: var(--color-red);
 }
 
 
 /* BENEFITS */
 
 .benefits {
-    background: var(--color-primary);
+    background: var(--color-white);
 
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 
 .benefits .eyebrow {
-    color: #c7a968;
+    color: var(--color-red);
 }
 
 
@@ -356,7 +438,7 @@ p {
     padding-top: 1.5rem;
 
     border-top:
-        1px solid rgba(255, 255, 255, 0.25);
+        3px solid var(--color-gold);
 }
 
 
@@ -365,24 +447,44 @@ p {
 
     margin-bottom: var(--space-md);
 
-    color: #c7a968;
+    color: var(--color-red);
 
     font-size: var(--fs-small);
-    font-weight: 700;
+
+    font-weight: 800;
 }
 
 
 .benefit h3 {
     margin-bottom: var(--space-sm);
+
+    color: var(--color-dark);
 }
 
 
 .benefit p {
-    color: rgba(255, 255, 255, 0.72);
+    color: var(--color-text-light);
 }
 
 
 /* GALLERY */
+
+.gallery {
+    background: var(--color-dark);
+
+    color: var(--color-white);
+}
+
+
+.gallery .eyebrow {
+    color: var(--color-gold);
+}
+
+
+.gallery h2 {
+    color: var(--color-white);
+}
+
 
 .gallery__header {
     display: grid;
@@ -400,7 +502,7 @@ p {
 
 
 .gallery__intro {
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.72);
 }
 
 
@@ -419,6 +521,9 @@ p {
 
 .gallery__item {
     overflow: hidden;
+
+    border:
+        1px solid rgba(231, 172, 6, 0.28);
 
     border-radius: var(--radius-medium);
 }
@@ -462,6 +567,7 @@ p {
 
 .gallery__item img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -478,7 +584,14 @@ p {
 /* TESTIMONIALS */
 
 .testimonials {
-    background: var(--color-surface);
+    background: var(--color-white);
+
+    color: var(--color-dark);
+}
+
+
+.testimonials .eyebrow {
+    color: var(--color-red);
 }
 
 
@@ -512,14 +625,19 @@ p {
     padding: clamp(2rem, 4vw, 3.5rem);
 
     border: 1px solid var(--color-border);
+
     border-radius: var(--radius-medium);
 
-    background: var(--color-background);
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-small);
 }
 
 
 .testimonial-card p {
     margin-bottom: var(--space-md);
+
+    color: var(--color-dark);
 
     font-family: var(--font-heading);
 
@@ -530,13 +648,27 @@ p {
 
 
 .testimonial-card span {
-    color: var(--color-text-light);
+    color: var(--color-olive-dark);
 
     font-size: var(--fs-small);
+
+    font-weight: 700;
 }
 
 
 /* FAQ */
+
+.faq {
+    background: var(--color-dark);
+
+    color: var(--color-white);
+}
+
+
+.faq .eyebrow {
+    color: var(--color-gold);
+}
+
 
 .faq__container {
     display: grid;
@@ -551,21 +683,25 @@ p {
 
 .faq__heading h2 {
     margin-bottom: var(--space-sm);
+
+    color: var(--color-white);
 }
 
 
 .faq__heading > p:last-child {
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
 .faq__list {
-    border-top: 1px solid var(--color-border);
+    border-top:
+        1px solid rgba(255, 255, 255, 0.22);
 }
 
 
 .faq-item {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.16);
 }
 
 
@@ -573,6 +709,7 @@ p {
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     width: 100%;
@@ -581,7 +718,7 @@ p {
 
     padding-block: 1.5rem;
 
-    color: var(--color-text);
+    color: var(--color-white);
 
     text-align: left;
 
@@ -589,10 +726,15 @@ p {
 }
 
 
+.faq-question:hover {
+    color: var(--color-gold);
+}
+
+
 .faq-icon {
     flex: 0 0 auto;
 
-    color: var(--color-secondary);
+    color: var(--color-red);
 
     font-size: 1.5rem;
 }
@@ -603,7 +745,7 @@ p {
 
     padding-bottom: 1.5rem;
 
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -615,7 +757,14 @@ p {
 /* CONTACT */
 
 .contact {
-    background: var(--color-surface);
+    background: var(--color-white);
+
+    color: var(--color-dark);
+}
+
+
+.contact .eyebrow {
+    color: var(--color-red);
 }
 
 
@@ -644,9 +793,12 @@ p {
     padding: clamp(1.5rem, 4vw, 3rem);
 
     border: 1px solid var(--color-border);
+
     border-radius: var(--radius-medium);
 
-    background: var(--color-background);
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-small);
 }
 
 
@@ -673,6 +825,7 @@ p {
 
 .form-group label {
     font-size: var(--fs-small);
+
     font-weight: 700;
 }
 
@@ -683,11 +836,12 @@ p {
     width: 100%;
 
     border: 1px solid var(--color-border);
+
     border-radius: var(--radius-small);
 
     outline: none;
 
-    background: var(--color-background);
+    background: var(--color-white);
 
     color: var(--color-text);
 }
@@ -711,7 +865,11 @@ p {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: var(--color-secondary);
+    border-color: var(--color-red);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(252, 65, 34, 0.12);
 }
 
 
@@ -739,6 +897,7 @@ p {
     display: inline-flex;
 
     align-items: center;
+
     gap: 0.75rem;
 
     min-height: 58px;
@@ -749,11 +908,12 @@ p {
 
     border-radius: 999px;
 
-    background: #25d366;
+    background: #25D366;
 
-    color: #ffffff;
+    color: #FFFFFF;
 
     font-size: 0.95rem;
+
     font-weight: 700;
 
     box-shadow:
@@ -769,7 +929,7 @@ p {
 .whatsapp-button:hover {
     transform: translateY(-3px);
 
-    background: #1ebe5d;
+    background: #1EBE5D;
 
     box-shadow:
         0 16px 36px rgba(0, 0, 0, 0.22);
@@ -794,7 +954,12 @@ p {
 .footer {
     padding-block: var(--space-md);
 
-    border-top: 1px solid var(--color-border);
+    border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    background: var(--color-dark);
+
+    color: var(--color-white);
 }
 
 
@@ -809,11 +974,13 @@ p {
 
 .footer__grid .logo {
     margin-right: auto;
+
+    color: var(--color-gold);
 }
 
 
 .footer p {
-    color: var(--color-text-light);
+    color: rgba(255, 255, 255, 0.7);
 
     font-size: var(--fs-small);
 }
@@ -921,20 +1088,21 @@ p {
 
 
     .nav.nav--open {
-        display: block;
-
         position: absolute;
 
         top: 68px;
         left: 0;
 
+        display: block;
+
         width: 100%;
 
         padding: 1.5rem;
 
-        border-bottom: 1px solid var(--color-border);
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.12);
 
-        background: var(--color-background);
+        background: var(--color-dark);
     }
 
 
@@ -1084,6 +1252,7 @@ p {
             0.85rem
             1rem;
     }
+
 }
 
 
@@ -1114,4 +1283,5 @@ p {
     .whatsapp-button__text {
         font-size: 0.9rem;
     }
+
 }

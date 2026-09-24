@@ -1,126 +1,42 @@
 :root {
 
-    /* =========================
-       COLORS
-    ========================== */
+    /* COLORS */
 
-    --color-primary: #1c211b;
-    --color-primary-hover: #30382e;
+    --color-dark: #11110F;
 
-    /*
-       Darker gold for text on light backgrounds.
-       Better accessibility contrast.
-    */
-    --color-secondary: #765b2f;
+    --color-primary: #11110F;
+    --color-primary-hover: #272721;
 
-    /*
-       Lighter accent specifically for dark backgrounds.
-    */
-    --color-secondary-light: #c7a968;
+    --color-red: #FC4122;
+    --color-red-hover: #E3361A;
 
-    --color-background: #fffdf8;
-    --color-surface: #f7f3ea;
+    --color-gold: #E7AC06;
+    --color-gold-dark: #E79406;
 
-    --color-text: #1c211b;
-    --color-text-light: #68685f;
+    --color-olive: #72931E;
+    --color-olive-dark: #587216;
 
-    --color-border: #ded8cc;
+    --color-mint: #A5CFBB;
+    --color-mint-dark: #74A58D;
 
-    --color-white: #ffffff;
+    --color-secondary: #72931E;
+    --color-secondary-light: #E7AC06;
 
+    --color-accent: #FC4122;
+    --color-accent-hover: #E3361A;
 
-    /* =========================
-       TYPOGRAPHY
-    ========================== */
+    --color-background: #FFFFFF;
+    --color-surface: #F7F7F3;
 
-    --font-body:
-        "Inter",
-        Arial,
-        Helvetica,
-        sans-serif;
+    --color-text: #11110F;
+    --color-text-light: #62645E;
 
-    --font-heading:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
+    --color-white: #FFFFFF;
+
+    --color-border: #D9D9D2;
 
 
-    /* =========================
-       FONT SIZE
-    ========================== */
-
-    --fs-small: 0.875rem;
-    --fs-base: 1rem;
-    --fs-medium: 1.25rem;
-
-
-    /* =========================
-       SPACING
-    ========================== */
-
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 2rem;
-    --space-lg: 4rem;
-    --space-xl: 7rem;
-
-
-    /* =========================
-       LAYOUT
-    ========================== */
-
-    --container-width: 1200px;
-    --container-padding: 1.5rem;
-
-
-    /* =========================
-       BORDER
-    ========================== */
-
-    --radius-small: 6px;
-    --radius-medium: 14px;
-    --radius-large: 24px;
-
-
-    /* =========================
-       TRANSITIONS
-    ========================== */
-
-    --transition: 0.25s ease;
-}:root {
-
-    /* =========================
-       COLORS
-    ========================== */
-
-    --color-primary: #1c211b;
-    --color-primary-hover: #30382e;
-
-    /*
-       Darker gold for text on light backgrounds.
-       Better accessibility contrast.
-    */
-    --color-secondary: #8b6f3d;
-
-    /*
-       Lighter accent specifically for dark backgrounds.
-    */
-    --color-secondary-light: #c7a968;
-
-    --color-background: #fffdf8;
-    --color-surface: #f7f3ea;
-
-    --color-text: #1c211b;
-    --color-text-light: #68685f;
-
-    --color-border: #ded8cc;
-
-    --color-white: #ffffff;
-
-
-    /* =========================
-       TYPOGRAPHY
-    ========================== */
+    /* TYPOGRAPHY */
 
     --font-body:
         "Inter",
@@ -134,18 +50,14 @@
         serif;
 
 
-    /* =========================
-       FONT SIZE
-    ========================== */
+    /* FONT SIZE */
 
     --fs-small: 0.875rem;
     --fs-base: 1rem;
     --fs-medium: 1.25rem;
 
 
-    /* =========================
-       SPACING
-    ========================== */
+    /* SPACING */
 
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -154,26 +66,29 @@
     --space-xl: 7rem;
 
 
-    /* =========================
-       LAYOUT
-    ========================== */
+    /* LAYOUT */
 
     --container-width: 1200px;
     --container-padding: 1.5rem;
 
 
-    /* =========================
-       BORDER
-    ========================== */
+    /* BORDER */
 
     --radius-small: 6px;
     --radius-medium: 14px;
     --radius-large: 24px;
 
 
-    /* =========================
-       TRANSITIONS
-    ========================== */
+    /* SHADOWS */
+
+    --shadow-small:
+        0 12px 30px rgba(17, 17, 15, 0.08);
+
+    --shadow-medium:
+        0 24px 60px rgba(17, 17, 15, 0.18);
+
+
+    /* TRANSITIONS */
 
     --transition: 0.25s ease;
 }
